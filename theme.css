@@ -1,0 +1,265 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Font Poppins */
+@font-face {
+  font-family: "poppins-regular";
+  src: url("fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("fonts/poppins/Poppins-Light.ttf"),
+    url("fonts/poppins/Poppins-Regular.ttf"),
+    url("fonts/poppins/Poppins-SemiBold.ttf"),
+    url("fonts/poppins/Poppins-Bold.ttf"),
+    url("fonts/poppins/Poppins-Italic.ttf");
+}
+/* Font Poppings */
+p,
+span,
+a,
+mark {
+  font-family: "poppins-regular";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+b,
+strong {
+  /* font-family: "poppins-bold"; */
+  font-family: "poppins";
+  font-weight: 700;
+}
+.main {
+  margin-top: 16px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.class1 {
+  padding: 0 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    to right,
+    rgb(173, 169, 150),
+    rgb(242, 242, 242),
+    rgb(219, 219, 219),
+    rgb(234, 234, 234)
+  );
+}
+
+.c1 {
+  padding: 0 8px;
+  width: 29%;
+}
+
+.c11 {
+  color: #757575 !important;
+  background-color: #fff !important;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.c12 {
+  position: relative;
+}
+
+.name {
+  color: #1b1313d4 !important;
+  padding: 0.01em 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+}
+
+.c13 {
+  padding: 0.01em 16px;
+}
+
+.lines {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+  font-size: 12px !important;
+  border-radius: 16px;
+}
+
+.line1 {
+  color: #fff !important;
+  background-color: #009688 !important;
+  text-align: center !important;
+  padding: 0.01em 16px;
+  border-radius: 16px;
+}
+
+img.image {
+  height: 30px;
+  width: 30px;
+}
+
+p.design {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+.liness {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+  border-radius: 16px;
+}
+
+.line2 {
+  color: #fff !important;
+  background-color: #009688 !important;
+  border-radius: 16px;
+}
+
+p.text2 {
+  font-size: 18px;
+}
+
+.c2 {
+  padding: 0 8px;
+  width: 69%;
+}
+
+h2.h2text {
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+h2.h2text {
+  font-weight: 400;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.c22 {
+  color: #000 !important;
+  font-family: "Roboto", sans-serif;
+  padding: 25px;
+}
+
+h5.h5text {
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+h6.h6text {
+  color: #009688 !important;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+img.calimg {
+  height: 30px;
+  width: 30px;
+}
+
+span.calspan {
+  color: #fff !important;
+  background-color: #009688 !important;
+  border-radius: 4px;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.c23 {
+  color: #000 !important;
+  font-family: "Roboto", sans-serif;
+  padding: 25px;
+}
+
+.c24 {
+  color: #000 !important;
+  font-family: "Roboto", sans-serif;
+  padding: 25px;
+}
+
+.c21 {
+  color: #000 !important;
+  background-color: #fff !important;
+  margin-bottom: 16px !important;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  padding: 0.01em 16px;
+}
+
+.f1 {
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.f1:hover:not(.active) {
+  background-image: linear-gradient(84deg, #7928ca, #ff0080) !important;
+  color: #cb0c9f;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #bf343400;
+  /* color: green; */
+  opacity: 1.25;
+}
+
+.resume-duration {
+  margin-left: 5px;
+}
+
+.fa-language {
+  font-size: 30px;
+}
+
+.fa-facebook-square {
+  font-size: 20px;
+}
+
+footer.footer {
+  margin-top: 16px !important;
+  text-align: center !important;
+  padding: 0.01em 16px;
+  margin-bottom: 16px;
+  background: linear-gradient(to right, rgb(0 0 0 / 48%), rgb(15, 155, 15));
+}
+
+h6.h6text::before,
+h6.h6text::after {
+  content: url(https://symplico.com/pub/static/frontend/Alothemes/milano/en_US/images/newhome/icon_account.svg) !important;
+  height: 30px;
+  width: 30px;
+}
+
+.designer-icon::before {
+  content: url(image.svg);
+  height: 5px;
+  width: 5px;
+}
+
+/* line-height: 1.5;
+letter-spacing: 1px;
+word-spacing: 7px;
+width: 100px;
+height: 100px;
+text-overflow: ellipsis;
+overflow: hidden; */

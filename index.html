@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <div class="main">
+      <div class="class1">
+        <div class="c1">
+          <div class="c11">
+            <div class="c12">
+              <img
+                src="https://www.w3schools.com/w3images/avatar_hat.jpg"
+                style="width: 100%;"
+                alt=""
+              />
+              <div class="name">
+                <h2>Jane Doe</h2>
+              </div>
+            </div>
+            <div class="c13">
+              <div class="divimage">
+                <div class="imageset">
+                  <i class="designer-icon"></i>
+                  <h4 class="designer">Designer</h4>
+                </div>
+              </div>
+              <p class="design">
+                <img
+                  src="https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png"
+                  class="image"
+                />
+                London, UK
+              </p>
+
+              <p class="design">
+                <img
+                  src="https://i.pinimg.com/originals/84/6a/03/846a03c6760f83f3a0e92609bca9cebf.jpg"
+                  class="image"
+                />
+                ex@mail.com
+              </p>
+
+              <p class="design">
+                <img
+                  src="data:image/png;base64,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"
+                  class="image"
+                />
+                1224435534
+              </p>
+              <br />
+              <hr />
+              <br />
+              <p class="design">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfJpftYBtLGubi614k0QhytBrO1rFtLSfNA&usqp=CAU"
+                  class="image"
+                />
+                <b>Skills</b>
+              </p>
+              <br />
+              <b><p class="text2">Adobe Photoshop</p></b>
+              <div class="lines">
+                <div class="line1" style="width: 90%;">90%</div>
+              </div>
+              <br />
+              <b><p class="text2">Photography</p></b>
+              <div class="lines">
+                <div class="line1" style="width: 80%;">80%</div>
+              </div>
+              <br />
+              <b><p class="text2">Illustrator</p></b>
+              <div class="lines">
+                <div class="line1" style="width: 75%;">75%</div>
+              </div>
+              <br />
+              <b
+                ><p class="text2">
+                  <span>
+                    <?xml version="1.0" standalone="no"?>
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                    <svg
+                      version="1.0"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30.000000px"
+                      height="30.000000px"
+                      viewBox="0 0 512.000000 512.000000"
+                      preserveAspectRatio="xMidYMid meet"
+                    >
+                      <g
+                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        fill="#000000"
+                        stroke="none"
+                      >
+                        <path
+                          d="M2372 5050 c-785 -61 -1502 -495 -1927 -1166 -120 -189 -239 -461
+                  -296 -678 -156 -591 -95 -1207 172 -1746 375 -756 1063 -1253 1909 -1377 159
+                  -23 501 -23 665 1 655 94 1223 420 1632 938 270 341 440 744 510 1205 22 149
+                  22 517 0 666 -71 472 -246 875 -532 1232 -396 494 -991 829 -1615 909 -153 20
+                  -379 26 -518 16z m1748 -2100 l0 -1140 -1560 0 -1560 0 0 1140 0 1140 1560 0
+                  1560 0 0 -1140z m-1171 -1257 c14 -51 101 -413 101 -419 0 -2 -220 -4 -490 -4
+                  -269 0 -490 2 -490 6 0 6 99 423 105 442 3 9 89 12 384 12 l380 0 10 -37z
+                  m251 -583 l0 -80 -640 0 -640 0 0 80 0 80 640 0 640 0 0 -80z"
+                        />
+                        <path
+                          d="M1152 3938 c-17 -17 -17 -1959 0 -1976 17 -17 2799 -17 2816 0 17 17
+                  17 1959 0 1976 -17 17 -2799 17 -2816 0z m2748 -988 l0 -920 -1340 0 -1340 0
+                  0 920 0 920 1340 0 1340 0 0 -920z"
+                        />
+                        <path
+                          d="M1436 3644 c-14 -14 -16 -90 -16 -692 0 -409 4 -683 10 -692 8 -13
+                  75 -15 487 -18 386 -2 482 0 497 11 17 12 18 46 17 698 -1 625 -3 685 -18 697
+                  -13 9 -127 12 -489 12 -416 0 -474 -2 -488 -16z m914 -694 l0 -630 -422 2
+                  -423 3 -3 628 -2 627 425 0 425 0 0 -630z"
+                        />
+                        <path
+                          d="M1626 3454 c-12 -12 -16 -37 -16 -112 0 -53 4 -102 8 -109 5 -8 91
+                  -14 298 -19 353 -9 334 -16 334 124 0 142 23 132 -320 132 -249 0 -291 -2
+                  -304 -16z m539 -114 l0 -45 -235 0 -235 0 -3 48 -3 47 238 -2 238 -3 0 -45z"
+                        />
+                        <path
+                          d="M1622 3088 c-7 -7 -12 -19 -12 -28 0 -38 15 -40 322 -40 284 0 298 1
+                  308 19 13 25 13 27 -6 45 -13 14 -55 16 -308 16 -214 0 -295 -3 -304 -12z"
+                        />
+                        <path
+                          d="M1615 2881 c-8 -26 3 -48 28 -55 12 -3 145 -6 295 -6 260 0 273 1
+                  292 20 16 16 18 25 10 40 -10 19 -22 20 -315 20 -287 0 -304 -1 -310 -19z"
+                        />
+                        <path
+                          d="M1622 2698 c-7 -7 -12 -19 -12 -28 0 -38 15 -40 322 -40 284 0 298 1
+                  308 19 13 25 13 27 -6 45 -13 14 -55 16 -308 16 -214 0 -295 -3 -304 -12z"
+                        />
+                        <path
+                          d="M1622 2498 c-16 -16 -15 -33 4 -52 13 -14 55 -16 303 -16 271 0 289
+                  1 305 19 14 15 15 24 6 40 -10 21 -17 21 -308 21 -219 0 -301 -3 -310 -12z"
+                        />
+                        <path
+                          d="M2703 3648 c-7 -8 -13 -270 -17 -690 -6 -670 -6 -678 14 -698 19 -19
+                  33 -20 494 -20 418 0 476 2 490 16 14 14 16 90 16 694 0 604 -2 680 -16 694
+                  -14 14 -72 16 -493 16 -371 0 -481 -3 -488 -12z m915 -695 l2 -623 -425 0
+                  -425 0 0 625 0 625 423 -2 422 -3 3 -622z"
+                        />
+                        <path
+                          d="M2886 3454 c-12 -12 -16 -37 -16 -110 0 -143 -21 -134 324 -134 245
+                  0 287 2 300 16 13 12 16 38 16 119 0 93 -2 105 -19 115 -12 6 -127 10 -305 10
+                  -245 0 -287 -2 -300 -16z m542 -111 l3 -43 -240 0 -241 0 0 38 c0 21 3 42 7
+                  46 4 3 110 5 237 4 l231 -3 3 -42z"
+                        />
+                        <path
+                          d="M2880 3080 c-8 -14 -8 -26 0 -40 11 -20 19 -20 312 -18 274 3 302 5
+                  312 21 8 12 8 22 0 35 -10 15 -38 17 -312 20 -293 2 -301 2 -312 -18z"
+                        />
+                        <path
+                          d="M2923 2903 c-20 -3 -37 -12 -44 -25 -10 -18 -8 -25 11 -40 20 -16 47
+                  -18 305 -18 244 0 286 2 299 16 18 18 20 32 6 54 -8 13 -51 15 -277 16 -147 1
+                  -283 -1 -300 -3z"
+                        />
+                        <path
+                          d="M2880 2690 c-8 -14 -8 -26 0 -40 11 -20 19 -20 312 -18 274 3 302 5
+                  312 21 8 12 8 22 0 35 -10 15 -38 17 -312 20 -293 2 -301 2 -312 -18z"
+                        />
+                        <path
+                          d="M2880 2489 c-9 -16 -8 -25 6 -40 16 -18 34 -19 304 -19 314 0 329 3
+                  316 53 l-6 27 -305 0 c-298 0 -305 0 -315 -21z"
+                        />
+                      </g>
+                    </svg>
+                  </span></p
+              ></b>
+              <div class="lines">
+                <div class="line1" style="width: 50%;">50%</div>
+              </div>
+              <br />
+
+              <br />
+              <p class="design">
+                <i class="fa-solid fa-language"></i>&nbsp;<b>Languages</b>
+              </p>
+              <br />
+              <b><p class="text2">English</p></b>
+              <div class="liness">
+                <div class="line2" style="height: 24px; width: 100%;"></div>
+              </div>
+              <br />
+              <b><p class="text2">Spanish</p></b>
+              <div class="liness">
+                <div class="line2" style="height: 24px; width: 55%;"></div>
+              </div>
+              <br />
+              <b><p class="text2">German</p></b>
+              <div class="liness">
+                <div class="line2" style="height: 24px; width: 25%;"></div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="c2">
+          <div class="c21">
+            <h2 class="h2text">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0JLZNn13PVj_xbnbhUw93hYqUtIDeQxNLw&usqp=CAU"
+                class="image"
+              />
+              <i>Work Experience</i>
+            </h2>
+            <div class="c22">
+              <h5 class="h5text">
+                <b>Front End Developer / w3schools.com</b>
+              </h5>
+              <br />
+              <h6 class="h6text">
+                <img
+                  src="https://media.istockphoto.com/vectors/icon-page-calendar-schedule-deadline-date-app-vector-id1284999664?k=20&m=1284999664&s=612x612&w=0&h=M8mtO2XOa3r5nSO3oNwasGDhsYSuiuwcykbWiADolzM="
+                  class="calimg"
+                />
+                Jan 2015
+                <span class="calspan"> Current</span>
+              </h6>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+              <br />
+              <hr />
+            </div>
+            <div class="c23">
+              <h5 class="h5text">
+                <b>Web Developer / something.com</b>
+              </h5>
+              <br />
+              <h6 class="h6text">
+                <img
+                  src="https://media.istockphoto.com/vectors/icon-page-calendar-schedule-deadline-date-app-vector-id1284999664?k=20&m=1284999664&s=612x612&w=0&h=M8mtO2XOa3r5nSO3oNwasGDhsYSuiuwcykbWiADolzM="
+                  class="calimg"
+                />
+                Mar 2012 - Dec 2014
+              </h6>
+              <br />
+              <p>
+                Consectetur adipisicing elit. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+              <br />
+              <hr />
+            </div>
+            <div class="c24">
+              <h5 class="h5text">
+                <b>Graphic Designer / designsomething.com</b>
+              </h5>
+              <br />
+              <h6 class="h6text">
+                <img
+                  src="https://media.istockphoto.com/vectors/icon-page-calendar-schedule-deadline-date-app-vector-id1284999664?k=20&m=1284999664&s=612x612&w=0&h=M8mtO2XOa3r5nSO3oNwasGDhsYSuiuwcykbWiADolzM="
+                  class="calimg"
+                />
+                Jun 2010 - Mar 2012
+                <span class="calspan"> Current</span>
+              </h6>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="c21">
+            <h2 class="h2text">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0JLZNn13PVj_xbnbhUw93hYqUtIDeQxNLw&usqp=CAU"
+                class="image"
+              />
+              Education
+            </h2>
+            <div class="c22">
+              <h5 class="h5text">
+                <b>W3Schools.com</b>
+              </h5>
+              <br />
+              <h6 class="h6text">
+                <img
+                  src="https://media.istockphoto.com/vectors/icon-page-calendar-schedule-deadline-date-app-vector-id1284999664?k=20&m=1284999664&s=612x612&w=0&h=M8mtO2XOa3r5nSO3oNwasGDhsYSuiuwcykbWiADolzM="
+                  class="calimg"
+                />
+                Forever
+              </h6>
+              <br />
+              <p>
+                Web Development! All I need to know in one place
+              </p>
+              <br />
+              <hr />
+            </div>
+            <div class="c23">
+              <h5 class="h5text">
+                <b>London Business School</b>
+              </h5>
+              <br />
+              <h6 class="h6text">
+                <img
+                  src="https://media.istockphoto.com/vectors/icon-page-calendar-schedule-deadline-date-app-vector-id1284999664?k=20&m=1284999664&s=612x612&w=0&h=M8mtO2XOa3r5nSO3oNwasGDhsYSuiuwcykbWiADolzM="
+                  class="calimg"
+                />
+                2013 - 2015
+              </h6>
+              <br />
+              <p>
+                Master Degree
+              </p>
+              <br />
+              <hr />
+            </div>
+            <div class="c24">
+              <h5 class="h5text">
+                <b>School of Coding</b>
+              </h5>
+              <br />
+              <h6 class="h6text">
+                <img
+                  src="https://media.istockphoto.com/vectors/icon-page-calendar-schedule-deadline-date-app-vector-id1284999664?k=20&m=1284999664&s=612x612&w=0&h=M8mtO2XOa3r5nSO3oNwasGDhsYSuiuwcykbWiADolzM="
+                  class="calimg"
+                />
+                <span class="resume-duration">2010 - 2013</span>
+                <span class="calspan"> Current</span>
+              </h6>
+              <br />
+              <p>
+                Bachelor Degree
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <br />
+      <b><p>Find me on social media.</p></b>
+      <br />
+      <nav>
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-snapchat-square"></i>
+      </nav>
+      <br />
+      <b
+        ><p>
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/default.asp"
+            target="_blank"
+            class="f1"
+            >w3.css</a
+          >
+        </p></b
+      >
+      <br />
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
